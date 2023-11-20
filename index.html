@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="youtube.css">
+  <script src="https://kit.fontawesome.com/deeb7dd738.js" crossorigin="anonymous"></script>
+  <!---google font link-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;900&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+<script src="trail.js" defer></script>
+  <title>Youtube</title>
+</head>
+<body>
+  <header>
+    <div class="left-section">
+      <i class="fa fa-bars" aria-hidden="true" data-menu-icon-btn></i>
+      <div class="left-section-img">
+      <img id="icon-2" src="img/youtube-logo.png">
+      <span>NG</span>
+      </div>
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <div class="search-button">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <div class="tooltip">Search with your voice</div>
+      </div>
+      <div class="voice-search-button">
+        <i class="fa fa-microphone" aria-hidden="true"></i>
+        <div class="tooltip">Search with your voice</div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <i class='bx bx-video-plus upload-icon'></i>
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="notification-icon-container">
+        <i title="Notifications" class="fa fa-bell-o" aria-hidden="true"></i>
+        <div class="badge">1</div>
+      </div>
+      <i class="fa fa-moon-o" id="icon" aria-hidden="true"></i>
+      <img src="img/unnamed.jpg">
+    </div>
+  </header>
+  <section>
+    <div class="sidebar-container" data-sidebar>
+      <div class="box">
+        <div class="sidebar-box" data-sidebar-box-1>
+          <div class="sidebar-icons">
+            <i class="fa fa-home" aria-hidden="true"></i>
+          </div>
+          <div class="sidebar-text">
+            <p>Home</p>
+          </div>
+        </div>
+
+        <div class="sidebar-box" data-sidebar-box-2>
+          <div class="sidebar-icons">
+            <i class="fa fa-scribd" aria-hidden="true"></i>
+          </div>
+          <div class="sidebar-text">
+            <p>Shorts</p>
+          </div>
+        </div>
+
+        <div class="sidebar-box" data-sidebar-box-3>
+          <div class="sidebar-icons">
+            <ion-icon class="tv" name="tv"></ion-icon>
+          </div>
+          
+          <div class="sidebar-text">
+            <p>Subscriptions</p>
+          </div>
+        </div>
+
+        <div class="sidebar-box" data-sidebar-box-4>
+          <div class="sidebar-icons">
+            <i class="fa fa-list-alt" aria-hidden="true"></i>
+          </div>
+          <div class="sidebar-text">
+            <p>Library</p>
+          </div>
+        </div>
+
+        <div class="sidebar-box" data-sidebar-box-5>
+          <div class="sidebar-icons">
+            <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+          </div>
+          <div class="sidebar-text">
+            <p>Downloads</p>
+          </div>
+        </div>
+      </div><!--end of box-->
+      <div class="box">
+        <div class="you-box" data-sidebar-box-6>
+          <h3>You</h3>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+        <div class="you-box" data-sidebar-box-7>
+          <div class="you-icons">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="you-text">
+            <p>Channel</p>
+          </div>
+        </div>
+        <div class="you-box" data-sidebar-box-8>
+          <div class="you-icons">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <div class="you-text">
+            <p>    History</p>
+          </div>
+        </div>
+        <div class="you-box" data-sidebar-box-9>
+          <div class="you-icons">
+            <ion-icon class="tv" name="tv"></ion-icon>
+          </div>
+          <div class="you-text">
+            <p>Videos</p>
+          </div>
+        </div>
+        <div class="you-box" data-sidebar-box-10>
+          <div class="you-icons"> 
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <div class="you-text">
+            <p> Watched</p>
+          </div>
+        </div>
+        <div class="you-box" data-sidebar-box-11>
+          <div class="you-icons"> 
+            <i class="fa-regular fa-thumbs-up"></i>
+          </div>
+          <div class="you-text">
+            <p>  Liked</p>
+          </div>
+        </div>
+        <div class="you-box" data-sidebar-box-12>
+          <div class="you-icons"> 
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </div>
+          <div class="you-text">
+            <p>More</p>
+          </div>
+        </div>
+      </div><!---end of box-->
+      <div class="box">
+        <div class="subscriptions-box" data-sidebar-box-13>
+          <div class="subscriptions-img">
+            <img src="img/supersimpledev.jpg">
+          </div>
+          <div class="subscriptions-text">
+           <p> SuperSimpleDev</p>
+          </div>
+        </div>
+
+        <div class="subscriptions-box" data-sidebar-box-14>
+          <div class="subscriptions-img">
+            <img src="img/freecodecamp.jpg">
+          </div>
+          <div class="subscriptions-text">
+            <p> Freecodecamp</p>
+          </div>
+        </div>
+
+        <div class="subscriptions-box" data-sidebar-box-15>
+          <div class="subscriptions-img">
+            <img src="img/kevin.jpg">
+          </div>
+          <div class="subscriptions-text">
+            <p>Kevin Powell</p>
+          </div>
+        </div>
+
+        <div class="subscriptions-box" data-sidebar-box-16>
+          <div class="subscriptions-img">
+            <img src="img/netninja.jpg">
+          </div>
+          <div class="subscriptions-text">
+            <p>Net ninja</p>
+          </div>
+        </div>
+      </div>
+    </div><!--end of sidebar container-->
+
+<main>
+  <section>
+    <div class="options-section" option-sidebar>
+      <div title="All" class="options-box active">
+        All
+      </div>
+      <div title="CSS" class="options-box">
+        CSS
+      </div>
+      <div title="Gaming" class="options-box">
+        Gaming
+      </div>
+      <div title="Trailers" class="options-box">
+        Trailers
+      </div>
+      <div title="News" class="options-box">
+        News
+      </div>
+      <div title="Computer" class="options-box">
+      Computer
+      </div>
+      <div title="Live" class="options-box">
+       Live
+      </div>
+      <div title="News" class="options-box">
+        News
+      </div>
+      <div title="Film" class="options-box">
+       Film
+      </div>
+      <div title="Thoughts" class="options-box">
+        Thoughts
+      </div>
+      <div title="Sketch" class="options-box">
+        Sketch
+      </div>
+      <div title="Trailers" class="options-box">
+        Trailers
+      </div>
+      <div title="Playlist" class="options-box">
+        Playlist
+      </div>
+      <div title="HTML" class="options-box">
+        Html
+      </div>
+      <div title="Music" class="options-box">
+        Music
+      </div>
+      
+    </div>
+  </section>
+  <section>
+    <div class="videoBx-section" video-sidebar>
+      <div class="video-Bx-container">
+        <div class="videoBx-img">
+          <img src="img/video-img.webp">
+          <div class="video-time">
+            <p>4:22</p>
+          </div>
+        </div>
+        <div class="videoBx-text">
+          <div class="channel-picture">
+            <img src="img/channel-pic-css.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-views-duration">
+              80K views &#46; 2 months ago
+            </p>
+          </div>
+          <div>
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="video-Bx-container loading">
+        <div class="videoBx-img">
+          <img src="img/billie-1.webp">
+          <div class="video-time">
+            <p>4:22</p>
+          </div>
+        </div>
+        <div class="videoBx-text">
+          <div class="channel-picture">
+            <img src="img/channel-pic-billiie.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Billie Eilish - everything i wanted (Official Music Video)
+            </p>
+            <p class="video-author">
+              Billie Eilish
+            </p>
+            <p class="video-views-duration">
+              360M views &#46; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video-Bx-container">
+        <div class="videoBx-img">
+          <img src="img/blood&water.webp">
+          <div class="video-time">
+            <p>4:22</p>
+          </div>
+        </div>
+        <div class="videoBx-text">
+          <div class="channel-picture">
+            <img src="img/channel-pic-netflix.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Blood & Water | Episode 1 | Netflix
+            </p>
+            <p class="video-author">
+             Netflix <i class="fa fa-check-circle" aria-hidden="true"></i>
+            </p>
+            <p class="video-views-duration">
+             6.3M views &#46; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video-Bx-container">
+        <div class="videoBx-img">
+          <img src="img/css-battle.jpg">
+          <div class="video-time">
+            <p>4:22</p>
+          </div>
+        </div>
+        <div class="videoBx-text">
+          <div class="channel-picture">
+            <img src="img/channel-pic-kevin.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Can I Beat The King Of CSS Again? - CSS Battle
+            </p>
+            <p class="video-author">
+             Web Dev Simplified <i class="fa fa-check-circle" aria-hidden="true"></i>
+            </p>
+            <p class="video-views-duration">
+              80K views &#46; 2 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video-Bx-container">
+        <div class="videoBx-img">
+          <img src="img/billie-2.jpg">
+          <div class="video-time">
+            <p>4:22</p>
+          </div>
+        </div>
+        <div class="videoBx-text">
+          <div class="channel-picture">
+            <img src="img/channel-pic-billiie.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Billie Eilish - Bellyache (Official Music Video)
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-views-duration">
+              650M views &#46; 6 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video-Bx-container">
+        <div class="videoBx-img">
+          <img src="img/css-todo.webp">
+          <div class="video-time">
+            <p>4:22</p>
+          </div>
+        </div>
+        <div class="videoBx-text">
+          <div class="channel-picture">
+            <img src="img/channel-pic-todo.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-views-duration">
+              80K views &#46; 2 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <section>
+    <div class="shorts-section" shorts-sidebar>
+      <div class="shorts-logo">
+        <img class="shorts-logo" src="img/youtube-red-shorts.png">
+        <p>Shorts</p>
+      </div>
+      <div class="shorts-container">
+        <div class="shorts-box">
+          <div class="shorts-img">
+            <img src="img/shorts-picture.webp">
+          </div>
+          <div class="shorts-text">
+            <div class="shorts-title">
+              When your phone rings
+            </div>
+            <div class="shorts-views-duration">
+             686K views
+            </div>
+          </div>   
+        </div>
+        <div class="shorts-box">
+          <div class="shorts-img">
+            <img src="img/shorts-img2.webp">
+          </div>
+          <div class="shorts-text">
+            <div class="shorts-title">
+             Coldest walks in Marvel
+            </div>
+            <div class="shorts-views-duration">
+             686K views
+            </div>
+          </div>   
+        </div>        <div class="shorts-box">
+          <div class="shorts-img">
+            <img src="img/shorts-img4 (1).jpg">
+          </div>
+          <div class="shorts-text">
+            <div class="shorts-title">
+              Me at my wedding
+            </div>
+            <div class="shorts-views-duration">
+             686K views
+            </div>
+          </div>   
+        </div>        <div class="shorts-box">
+          <div class="shorts-img">
+            <img src="img/shorts-img4 (2).jpg">
+          </div>
+          <div class="shorts-text">
+            <div class="shorts-title">
+              Fola's Cabin
+            </div>
+            <div class="shorts-views-duration">
+             686K views
+            </div>
+          </div>   
+        </div>        <div class="shorts-box">
+          <div class="shorts-img">
+            <img src="img/shorts-img4 (4).jpg">
+          </div>
+          <div class="shorts-text">
+            <div class="shorts-title">
+              Happy morning person
+            </div>
+            <div class="shorts-views-duration">
+             686K views
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="last">
+    <button class="last-btn">Show more</button>
+  </div>
+  </main>
+ 
+  
+</body>
+</html>
