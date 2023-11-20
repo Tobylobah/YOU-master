@@ -14,10 +14,10 @@ const sidebarBx9 = document.querySelector("[data-sidebar-box-9]");
 const sidebarBx10 = document.querySelector("[data-sidebar-box-10]");
 const sidebarBx11 = document.querySelector("[data-sidebar-box-11]");
  const sidebarBx12 = document.querySelector("[data-sidebar-box-12]");
-// const sidebarBx13 = document.querySelector("[data-sidebar-box-13]");
-// const sidebarBx14 = document.querySelector("[data-sidebar-box-14]");
-// const sidebarBx15 = document.querySelector("[data-sidebar-box-15]");
-// const sidebarBx16 = document.querySelector("[data-sidebar-box-16]");
+const sidebarBx13 = document.querySelector("[data-sidebar-box-13]");
+const sidebarBx14 = document.querySelector("[data-sidebar-box-14]");
+const sidebarBx15 = document.querySelector("[data-sidebar-box-15]");
+const sidebarBx16 = document.querySelector("[data-sidebar-box-16]");
 const videoBx = document.querySelector("[video-sidebar]");
 const shorts = document.querySelector("[shorts-sidebar]");
 const option = document.querySelector("[option-sidebar]");
@@ -36,13 +36,18 @@ menuIconButton.addEventListener("click", () => {
   sidebarBx10.classList.toggle("open");
   sidebarBx11.classList.toggle("open");
   sidebarBx12.classList.toggle("open");
-  // sidebarBx13.classList.toggle("open");
-  // sidebarBx14.classList.toggle("open");
-  // sidebarBx15.classList.toggle("open");
-  // sidebarBx16.classList.toggle("open");
+  sidebarBx13.classList.toggle("open");
+  sidebarBx14.classList.toggle("open");
+  sidebarBx15.classList.toggle("open");
+  sidebarBx16.classList.toggle("open");
   videoBx.classList.toggle("open");
   shorts.classList.toggle("open");
   option.classList.toggle("open");
 });
-
+let icon = document.getElementById("icon");
+icon.onclick = function(){
+     document.body.classList.toggle('dark-theme');
+     if(document.body.classList.contains("dark-theme")){
+     }
+}
 
